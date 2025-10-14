@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Birthday Wish! - Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="photos.html">Our Moments</a>
+            <a href="message.html">A Special Message</a>
+            <a href="surprise.html">Your Surprise!</a>
+            <a href="games.html">Play a Game!</a>
+            <a href="guestbook.html">Leave a Wish</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Leave a Birthday Wish!</h1>
+        <h2>Share your warm wishes for my love!</h2>
+        <p>This little guestbook is a place for you to send a sweet message to my amazing girlfriend on her special day.</p>
+        <form class="guestbook-form" id="wishForm" action="/submit-wish" method="POST">
+            <div class="form-group">
+                <label for="wishMessage">Your Heartfelt Wish:</label>
+                <textarea id="wishMessage" name="wishMessage" rows="6" placeholder="Type your loving message here..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="yourName">Your Name:</label>
+                <input type="text" id="yourName" name="yourName" placeholder="e.g., [Your Name]" required>
+            </div>
+            <button type="submit" class="btn">Send Your Wish! 💌</button>
+        </form>
+        <div id="responseMessage" class="guestbook-message-display" style="display: none;">
+            <!-- Dynamic response will be displayed here -->
+        </div>
+        <p style="margin-top: 2rem;">Every word of kindness adds to the magic of her birthday!</p>
+        <a href="index.html" class="btn">Back to Home</a>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 For My Amazing Girlfriend. All rights reserved with love.</p>
+            <p class="made-by-text">Made by Krish</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
